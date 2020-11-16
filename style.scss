@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&display=swap');
+$primary:rgb(228,
+149,
+58);
+$secondary:chocolate;
+$bglight:rgb(255,
+164,
+29);
+$light:#f3f3f3;
+$dark:#9e440c;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $primary;
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
+
+fieldset {
+    width: fit-content;
+    height: fit-content;
+    min-width: 50vw;
+    min-height: 50vmin;
+    max-width: 90vw;
+    position: relative;
+    display: flex;
+    text-align: center;
+    border: 3px solid $secondary;
+    background: $bglight;
+    box-shadow: 0px 3px 5px #994242;
+    padding: 2% 0;
+    margin: 6% 0;
+}
+
+legend {
+    background: $secondary;
+    margin-left: calc(30%);
+    padding: 5px;
+    border-radius: 0px;
+    color: $light;
+    font-weight: 500;
+    position: relative;
+}
+
+legend::before,
+legend::after {
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    background: radial-gradient(#f3f3f3, #ec6c1e, #903800);
+    filter: drop-shadow(0px 1px 1px #333);
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+}
+
+legend::after {
+    left: unset;
+    right: -5px;
+}
+
+fieldset .agenda {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: $light;
+    margin: 10px;
+}
+
+fieldset ul {
+    list-style: none;
+}
+
+fieldset ul li {
+    color: $dark;
+    padding: 1em 0.1em 0.5em 0.1em;
+    margin: 5px 2em;
+}
+
+fieldset ul li:not(:last-child) {
+    border-bottom: 2px solid $dark;
+}
+
+.brand {
+    position: absolute;
+    top: 5%;
+    text-decoration: none;
+    color: $light;
+    font-size: 3em;
+    font-weight: 700;
+    -webkit-text-stroke: 1px $dark;
+}
+
+.brand::before {
+    content: "SpineFog";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    background: repeating-linear-gradient(45deg, $light, transparent 20px);
+    z-index: -1;
+    -webkit-background-clip: text;
+    color: transparent;
+}

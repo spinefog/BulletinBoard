@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e4953a;
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+fieldset {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 50vw;
+  min-height: 50vmin;
+  max-width: 90vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border: 3px solid chocolate;
+  background: #ffa41d;
+  -webkit-box-shadow: 0px 3px 5px #994242;
+          box-shadow: 0px 3px 5px #994242;
+  padding: 2% 0;
+  margin: 6% 0;
+}
+
+legend {
+  background: chocolate;
+  margin-left: calc(30%);
+  padding: 5px;
+  border-radius: 0px;
+  color: #f3f3f3;
+  font-weight: 500;
+  position: relative;
+}
+
+legend::before,
+legend::after {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  background: radial-gradient(#f3f3f3, #ec6c1e, #903800);
+  -webkit-filter: drop-shadow(0px 1px 1px #333);
+          filter: drop-shadow(0px 1px 1px #333);
+  position: absolute;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+}
+
+legend::after {
+  left: unset;
+  right: -5px;
+}
+
+fieldset .agenda {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #f3f3f3;
+  margin: 10px;
+}
+
+fieldset ul {
+  list-style: none;
+}
+
+fieldset ul li {
+  color: #9e440c;
+  padding: 1em 0.1em 0.5em 0.1em;
+  margin: 5px 2em;
+}
+
+fieldset ul li:not(:last-child) {
+  border-bottom: 2px solid #9e440c;
+}
+
+.brand {
+  position: absolute;
+  top: 5%;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 3em;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #9e440c;
+}
+
+.brand::before {
+  content: "SpineFog";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background: repeating-linear-gradient(45deg, #f3f3f3, transparent 20px);
+  z-index: -1;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/*# sourceMappingURL=style.css.map */
